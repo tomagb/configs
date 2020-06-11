@@ -14,5 +14,7 @@
   st = status
   br = branch
   aa = add -A
+  cm = commit -m
+  pu = push origin master
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 

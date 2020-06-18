@@ -1,5 +1,7 @@
 [core]
 	sshCommand = C:/windows/System32/OpenSSH/ssh.exe
+	whitespace = cr-at-eol
+	autocrlf = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -15,6 +17,8 @@
   br = branch
   aa = add -A
   cm = commit -m
-  pu = push origin master
+  pu = push origin
+  sw = switch
+  rc = rebase --continue
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 

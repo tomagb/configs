@@ -2,6 +2,7 @@
 	sshCommand = C:/windows/System32/OpenSSH/ssh.exe
 	whitespace = cr-at-eol
 	autocrlf = true
+	excludesfile = C:\\Users\\toma_becea\\Documents\\gitignore_global.txt
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

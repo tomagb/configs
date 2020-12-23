@@ -22,4 +22,5 @@
   sw = switch
   rc = rebase --continue
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 
